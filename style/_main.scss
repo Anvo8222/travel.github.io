@@ -1,0 +1,26 @@
+main{
+    max-height: 300px;
+    width: 100%;
+}
+.main__img{
+    max-height: 300px;
+    opacity: 0.8;
+    width: 100%;
+}
+.scrollUp{
+
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    display: none;
+    bottom: 50px;
+    right: 50px;
+    &:hover{
+        cursor: pointer;
+    }
+    z-index: 1;
+    i{
+        font-size: 2rem;
+        color: $blue-color;
+    }
+}

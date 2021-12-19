@@ -1,0 +1,73 @@
+.contact{
+    width: 100%;
+    padding-top: 40%;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    background-attachment: fixed;
+    .contact__form{
+        width: 50%;
+        height: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        position: absolute;
+        top: 50%;
+        .contact__form-name{
+            font-size: 3rem;
+            text-shadow: 2px 2px $text-color;
+            margin: 0;
+            text-align: center;
+            font-weight: 300;
+            color: $white-color;
+
+        }
+        .contact__form-title{
+            border-radius:8px ;
+            color: $white-color;
+            font-size: 1rem;
+            padding: 30px;
+            background-color: rgba(24, 24, 24, 0.8);
+           
+        }
+        .contact__form-group{
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            .group-left{
+                display: flex;
+                flex-direction: column;
+                width: 45%;
+                .group-left-input{
+                    display: block;
+                    width: 100%;
+                    flex: 1;
+                    padding: 10px;
+                    margin-bottom: 4px;
+                    font-size: 0.8rem;
+                    color: $white-color;
+                    border-color: none;
+                    border-style: none;
+                    background-color: rgba(24, 24, 24, 0.8);
+                    
+                }
+            }
+            // bug
+            .group-left-input:focus{
+                border-color: rgba(65, 77, 236,1);
+                box-shadow: 1px 1px rgb(65, 77, 236);
+            }
+            .group-right{
+                width: 45%;
+                .group-right-message{
+                    width: 100%;
+                    font-size: 0.8rem;
+                    color: $white-color;
+                    background-color: rgba(24, 24, 24, 0.8);
+                }
+            }
+            
+        }
+    }
+}

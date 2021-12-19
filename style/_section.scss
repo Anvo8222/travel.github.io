@@ -1,0 +1,217 @@
+@import 'mixins';
+%sectionStyle{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+@keyframes hiendan {
+    from{
+        
+        opacity: 1;
+    }
+    to{
+        opacity: 0.7;
+    }
+}
+.section__group{
+    @extend %sectionStyle;
+    
+}
+.section__group-1{
+    width: 100%;
+    display: flex;
+    margin: 60px 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section__group-about{
+    width: 100%;
+}
+.section__group-about-1{
+    width: 390px;
+    max-height: 450px;
+    overflow: hidden;
+    
+    background-color: $background-color;
+    .group-about-img{
+        height: 190px;
+        width: 100%;
+    }
+    .group-about-1-content{
+        margin: 30px;
+        .group-about-1-content-name{
+            font-size: 1.4rem;
+        }
+        .group-about-1-content-name-1{
+            color:$green-color;
+        }
+        .group-about-1-content-name-2{
+            color: $blue-color;
+        }
+        .group-about-1-content-name-3{
+            color: $grew-color;
+        }
+        .group-about-1-content-text{
+            font-size: 1rem;
+            color: $text-color;
+            margin: 0;
+            @include webkitline;
+            -webkit-line-clamp: 5;
+            
+            font-weight: 300;
+            opacity: 0.8;
+        }
+        .group-about-1-content-btn{
+            @include buttonStyle;
+            color: $white-color;
+            
+            margin: 0 auto;
+            margin-top: 20px;
+
+            
+            &:hover{
+                cursor: pointer;
+                opacity: 0.7;
+                animation: hiendan ease-out 0.2s;
+            }
+        }
+        
+        .group-about-1-content-btn-1{
+            background-color: $green-color !important;
+        }
+        .group-about-1-content-btn-2{
+            background-color:$blue-color !important;
+        }
+        .group-about-1-content-btn-3{
+            background-color: $grew-color !important;
+        }
+    }
+}
+// section__group-about-2
+.section__group-about-2-box{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.section__group-about-2{
+    width: 580px;
+    height: 600px;
+    
+    background-color: $background-color;
+    margin-top: 90px;
+    .group-about-2-img{
+        width: 100%;
+        height: 260px;
+    }
+    .group-about-2-content{
+        margin: 34px;
+
+        .group-about-2-name{
+            margin: 0;
+            color: $text-color;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+        .group-about-1-content-text{
+            margin: 18px;
+            font-size: 1rem;
+            font-weight: 300;
+            color: $text-color;
+            @include webkitline;
+            -webkit-line-clamp: 4;
+        }
+        .group-about-1-content-btn{
+            float: right;
+            @include buttonStyle;
+            border: 1px solid $border-color;
+            background-color: $white-color;
+            &:hover{
+                @include buttonHover;
+            }
+        }
+    }
+}
+
+// section__group-servic
+
+
+.section__group-servic{
+    @extend %sectionStyle;
+}
+.section__group-servic-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+.section__group-servic-item{
+    width: 280px;
+    height: 500px;
+    background-color: $background-color;
+    .section__group-servic-img{
+        width: 100%;
+        height: 40%;
+    }
+    .section__group-text-button{
+        margin: 10px;
+        .section__group-servic-name{
+            text-align: center;
+            color: $text-color;
+            font-size: 1.2rem;
+            @include webkitline;
+            -webkit-line-clamp: 1;
+        }
+        .section__group-servic-text{
+            font-size: 1rem;
+            color: $text-color;
+            text-align: justify;
+            @include webkitline;
+            -webkit-line-clamp: 6;
+        }
+        .section__group-servic-btn{
+            @include buttonStyle;
+            margin: 0 auto;
+            border: 1px solid $border-color;
+            background-color: $white-color;
+            margin-top: 40px;
+            &:hover{
+                @include buttonHover;
+            }
+        }
+    }
+    
+    
+}
+.section__group-servic-item-end{
+    min-height: 700px;
+    margin-top: 30px;
+    background-color: $background-color;
+
+    .servic-img-end{
+        width: 100%;
+        height: 400px;
+    }
+    .servic-text-button-end{
+        margin: 30px;
+        .name{
+            font-size: 1.6rem;
+            color: $text-color;
+            font-weight: 400;
+        }
+        .content,.address{
+            font-size: 1rem;
+            color: $text-color;
+        }
+        .button{
+            
+            @include buttonStyle;
+            border: 1px solid $border-color;
+            background-color: $white-color;
+            margin-top: 40px;
+
+            &:hover{
+                @include buttonHover;
+            }
+        }
+    }
+}

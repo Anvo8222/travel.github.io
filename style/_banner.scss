@@ -1,0 +1,36 @@
+.slider{
+    padding-top: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    background-attachment: fixed;
+   
+    
+    &__name{
+        font-size: 3rem;
+        position: absolute;
+        top: 50%;
+        left:20%;
+        color: $white-color;
+        text-align: center;
+        font-family: 'The Nautigal', cursive;
+        font-weight: 700;
+        font-weight: bold;
+        
+        // test animation
+        -webkit-animation: myOrbit 8s linear infinite; /* Chrome, Safari 5 */
+       
+        @-webkit-keyframes myOrbit {
+            from {
+                color: $blue-color;
+                -webkit-transform: rotate(0deg) translateX(20px) rotate(0deg); 
+            }
+            to { 
+               
+                color: $white-color;
+                -webkit-transform: rotate(360deg) translateX(20px) rotate(-360deg); 
+            }
+        }
+    }
+}

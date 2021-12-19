@@ -1,0 +1,19 @@
+@mixin buttonStyle {
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    display: block;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+@mixin webkitline {
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+@mixin buttonHover {
+    background-color: $background-color;
+    opacity: 0.7;
+    animation: hiendan ease-out 0.4s;
+}

@@ -1,0 +1,94 @@
+
+// màn hình máy tính
+@media (min-width: 1024px){
+
+}
+// màn hình máy tính bảng
+@media (min-width: 740px) and (max-width:1024px){
+    // slider
+    .slider{
+        background-size: contain;
+    }
+    .section__group{
+        .section__group-about{
+            .section__group-1{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+    
+    
+    .section__group-about-1{
+        width: 40%;
+    }
+    .section__group-about-2{
+        width: 100%;
+    }
+    .section__group-servic-list{
+        justify-content: space-around;
+    }
+    
+    .contact{
+        height: 300px;
+    }
+    // form
+    
+    
+
+}
+//dien thoai
+@media (max-width:739px) {
+    //header
+    .header{
+        overflow: hidden;
+        top:0;
+        
+        .header-menu{
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav{
+        display: block;
+        .nav__item{
+            display: block;
+            width: 100%;
+        }
+        }
+        .header__menu{
+            display: block;
+            margin-top: 18px;
+            margin-right: 4px;
+        }
+    }
+    //slider
+    .slider{
+        background-size: contain;
+        margin-top: 70px;
+        padding-top: 50%;
+        .slider__name{
+            font-size: 1.2rem;
+
+        }
+    }
+    //section
+    .section__group-about-1{
+        width: 100%;
+    }
+    .section__group-servic-item{
+        width: 100%;
+    }
+    .contact{
+        height: 300px;
+        .contact__form{
+            .contact__form-title{
+                padding: 2px 4px;
+                @include webkitline;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+                
+            }
+            
+        }
+    }
+}
